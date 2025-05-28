@@ -1,0 +1,275 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar styles */
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+.scrollbar-thumb-slate-200 {
+  scrollbar-color: #e2e8f0 transparent;
+}
+
+.dark .scrollbar-thumb-slate-700 {
+  scrollbar-color: #334155 transparent;
+}
+
+/* For Webkit browsers */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thumb-slate-200::-webkit-scrollbar-thumb {
+  background-color: #e2e8f0;
+  border-radius: 3px;
+}
+
+.dark .scrollbar-thumb-slate-700::-webkit-scrollbar-thumb {
+  background-color: #334155;
+}
+
+@layer base {
+  html {
+    font-size: 16px;
+  }
+
+  @media (max-width: 768px) {
+    html {
+      font-size: 14px;
+    }
+  }
+
+  .hero-section {
+    min-height: 100vh;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-section img {
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  @media (max-width: 768px) {
+    .hero-section,
+    .hero-section img {
+      height: 100vh;
+      min-height: 100vh;
+    }
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding: 0 2rem;
+    }
+  }
+  * {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  :root {
+    --background: 55 45% 92%;
+    --foreground: 206 69% 31%;
+    --muted: 55 45% 88%;
+    --muted-foreground: 206 69% 41%;
+    --popover: 55 45% 92%;
+    --popover-foreground: 206 69% 31%;
+    --card: 55 45% 97%;
+    --card-foreground: 206 69% 31%;
+    --border: 206 69% 85%;
+    --input: 206 69% 85%;
+    --primary: 206 56% 35%;
+    --primary-foreground: 55 45% 97%;
+    --secondary: 39 57% 60%;
+    --secondary-foreground: 55 45% 97%;
+    --accent: 208 50% 20%;
+    --accent-foreground: 55 45% 97%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 55 45% 97%;
+    --ring: 206 69% 75%;
+    --radius: 0.5rem;
+    --chart-1: 206 56% 35%;
+    --chart-2: 39 57% 60%;
+    --chart-3: 208 50% 20%;
+    --chart-4: 206 69% 31%;
+    --chart-5: 55 45% 92%;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 207 90% 54%;
+  --primary-foreground: 211 100% 99%;
+  --secondary: 122 39% 49%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 339 90% 51%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.page-transition {
+  transition: opacity 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-section img {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+.hero-section p {
+  opacity: 0;
+  animation: slideUp 1s ease-out forwards;
+  animation-delay: 0.8s;
+}
+
+.hero-section .button-container {
+  opacity: 0;
+  animation: slideUp 1s ease-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes revealLetter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-text-reveal {
+  display: inline-block;
+}
+
+.animate-text-reveal span {
+  display: inline-block;
+  opacity: 0;
+  animation: revealLetter 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes swing {
+  0%, 100% { transform: rotate(-10deg); }
+  50% { transform: rotate(10deg); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-swing {
+  animation: swing 1s ease-in-out infinite;
+}
+
+/* Basic animations */
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.5s ease-out;
+}
+
+.hero-section h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    .hero-section p {
+        font-size: 1rem;
+    }
+    .hero-section .text-3xl {
+        font-size: 1.5rem;
+    }
+    .hero-section {
+        background-image: url('https://res.cloudinary.com/df8blxifj/image/upload/v1746208795/jueiqx3p5nvjnj8nqytg.jpg');
+    }
+}
+
+@media (min-width: 769px) {
+    .hero-section {
+        background-image: url('https://res.cloudinary.com/df8blxifj/image/upload/v1746208786/fhxbdxoaxhb422gehecq.jpg');
+    }
+}
