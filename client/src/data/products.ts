@@ -115,7 +115,7 @@ export const products: Product[] = [
     description: "Ingredient: Blackcurrant Juice Powder, Dextrose, Acai Berry Extract, Blueberry Powder, Tomato Fruit Extract, Apple Stem Cell, Grape Stem",
     price: 1499,
     images: [
-      "https://i.im.ge/2025/04/27/vU1ahC.IMG-20250421-WA0019.jpeg",
+      "https://res.cloudinary.com/dnqukw6fb/image/upload/v1748436363/WhatsApp_Image_2025-05-28_at_18.07.11_131e891f_f9mwpk.jpg",
       "https://res.cloudinary.com/dnqukw6fb/image/upload/v1747420421/WhatsApp_Image_2025-05-16_at_14.20.11_0c2be80c_jab3se.jpg",
       "https://res.cloudinary.com/dnqukw6fb/image/upload/v1747420994/WhatsApp_Image_2025-05-16_at_14.20.10_b5ca2991_nnwkvy.jpg",
       "https://res.cloudinary.com/dnqukw6fb/image/upload/v1747420323/WhatsApp_Image_2025-05-16_at_14.20.13_27e7eaad_sj07u6.jpg",
@@ -134,8 +134,8 @@ export const products: Product[] = [
     description: "Snowphyll Forte contains a unique combination of plant-based vitamins designed to enhance overall well-being and boost immunity, catering to health-conscious consumers seeking natural supplements.",
     price: 349,
     images: [
-      "https://i.im.ge/2025/04/27/vUOemS.IMG-20250421-WA0009.jpeg",
-      "https://i.im.ge/2025/04/27/vU101m.IMG-20250421-WA0024.jpeg",
+      "https://res.cloudinary.com/dnqukw6fb/image/upload/v1748436394/WhatsApp_Image_2025-05-28_at_18.09.48_10d86f1e_cvrpqc.jpg",
+      "https://res.cloudinary.com/dnqukw6fb/image/upload/v1748436430/WhatsApp_Image_2025-05-28_at_18.09.48_b8f81de4_ptoz7t.jpg",
       "https://res.cloudinary.com/dnqukw6fb/image/upload/v1747421269/WhatsApp_Image_2025-05-17_at_00.09.50_622c69a8_sv2fpo.jpg",
       "https://res.cloudinary.com/dnqukw6fb/image/upload/v1747421002/WhatsApp_Image_2025-05-16_at_14.20.07_f837e168_pn5ya0.jpg",
       "https://res.cloudinary.com/dnqukw6fb/image/upload/v1747420407/WhatsApp_Image_2025-05-16_at_14.20.12_186f2dec_ggmtaf.jpg",
@@ -181,7 +181,7 @@ export const products: Product[] = [
     description: "",
     price: 499,
     images: [
-      "https://i.im.ge/2025/04/27/vU16bc.IMG-20250421-WA0028.jpeg",
+      "https://res.cloudinary.com/dnqukw6fb/image/upload/v1748436475/WhatsApp_Image_2025-05-16_at_14.20.10_b55fb464_zt11v6.jpg",
       "https://res.cloudinary.com/dnqukw6fb/image/upload/v1747421232/WhatsApp_Image_2025-05-17_at_00.15.24_7927429b_gk0fd8.jpg",
       "https://res.cloudinary.com/dnqukw6fb/image/upload/v1747420986/WhatsApp_Image_2025-05-16_at_14.20.09_b4ad2f34_h76wqg.jpg",
       "https://res.cloudinary.com/dnqukw6fb/image/upload/v1747420376/WhatsApp_Image_2025-05-16_at_14.20.11_493c4d0f_lkrxbg.jpg",
@@ -199,7 +199,7 @@ export const products: Product[] = [
     images: [
       "https://res.cloudinary.com/dnqukw6fb/image/upload/v1747420969/WhatsApp_Image_2025-05-16_at_14.20.10_c5f67d44_xbxxpr.jpg",
       "https://res.cloudinary.com/dnqukw6fb/image/upload/v1747419231/WhatsApp_Image_2025-05-16_at_14.20.13_e68fee2c_zz4mln.jpg",
-      "https://i.im.ge/2025/04/27/vU1ahC.IMG-20250421-WA0019.jpeg"
+      "https://res.cloudinary.com/dnqukw6fb/image/upload/v1748436895/WhatsApp_Image_2025-05-28_at_18.13.24_192a66d0_g9m1l9.jpg"
     ],
     category: "Supplements",
     rating: 4.5,
