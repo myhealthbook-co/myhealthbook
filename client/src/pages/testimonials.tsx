@@ -21,13 +21,13 @@ export default function Testimonials() {
       />
 
       {/* Photo Testimonials Section */}
-      <section className="px-4 md:px-12 py-16 bg-[#020617]">
+{/*       <section className="px-4 md:px-12 py-16 bg-[#020617]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {testimonials.map((testimonial) => (
             <TestimonialCard key={testimonial.id} testimonial={testimonial} />
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Video Testimonials Section */}
       <section className="py-16 bg-slate-50 dark:bg-slate-900">
