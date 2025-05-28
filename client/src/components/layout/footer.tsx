@@ -10,7 +10,7 @@ export default function Footer() {
               <img 
                 src="https://res.cloudinary.com/dnqukw6fb/image/upload/v1748437299/WhatsApp_Image_2025-05-28_at_11.40.57_1fe5e492-fotor-bg-remover-202505281153206_x9fiwb.png" 
                 alt="MyHealth Book Logo" 
-                className="h-24 w-auto"
+                className="h-20 w-auto"
               />
             </div>
             <p className="text-slate-300 mb-6">
