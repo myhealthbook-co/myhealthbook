@@ -8,7 +8,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center space-x-2 mb-6">
               <img 
-                src="https://i.im.ge/2025/05/24/vznNqY.Professional-Logo-for-My-Health-Book-with-Medical-Icon-removebg-preview.png" 
+                src="https://res.cloudinary.com/dnqukw6fb/image/upload/v1748413534/WhatsApp_Image_2025-05-28_at_11.40.57_1fe5e492-fotor-bg-remover-20250528115320_cozrey.pn" 
                 alt="MyHealth Book Logo" 
                 className="h-16 w-auto"
               />
