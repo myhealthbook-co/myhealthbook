@@ -38,7 +38,7 @@ export default function About() {
   return (
     <div>
       <PageHeader 
-        title="About MediCarePlus" 
+        title="About My Health Book" 
         subtitle="Dedicated to advancing healthcare through innovative, high-quality products."
       />
 
