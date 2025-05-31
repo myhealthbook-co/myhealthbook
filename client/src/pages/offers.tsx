@@ -84,7 +84,7 @@ export default function Offers() {
     <div>
       <PageHeader 
         title="Special Offers & Promotions" 
-        subtitle="Discover exclusive deals and discounts on our premium healthcare products."
+        subtitle="Discover exclusive deals and discounts on our premium high quality food supliment."
         accentWord="Offers"
       />
 
