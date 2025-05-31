@@ -130,68 +130,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonial Preview */}
-{/*       <section className="py-20 bg-gradient-to-b from-[#0f172a] to-[#1e293b] text-white">
-        <div className="container mx-auto px-6">
-          {/* Heading */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-extrabold tracking-tight mb-4">What People Are Saying</h2>
-            <p className="text-slate-400 max-w-xl mx-auto text-lg">
-              Hear from real people who love what we do.
-            </p>
-          </div>
-
-          {/* Testimonials */}
-          <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-            {featuredTestimonials.slice(0, 3).map((testimonial) => (
-              <div
-                key={testimonial.id}
-                className="relative bg-[#1e293b] p-8 rounded-2xl shadow-xl hover:shadow-blue-500/20 transition-shadow"
-              >
-                <div className="absolute top-4 right-4 text-blue-500 text-3xl opacity-30">
-                  &ldquo;
-                </div>
-                <div className="flex items-center gap-4 mb-4">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-14 h-14 rounded-full border-2 border-blue-500 object-cover"
-                  />
-                  <div>
-                    <h4 className="text-lg font-semibold">{testimonial.name}</h4>
-                    <span className="text-sm text-blue-400">{testimonial.title}</span>
-                  </div>
-                </div>
-                <p className="text-slate-300 text-sm leading-relaxed">
-                  {testimonial.content.length > 160
-                    ? testimonial.content.slice(0, 160) + '...'
-                    : testimonial.content}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          {/* Read More Button */}
-          <div className="text-center mt-12">
-            <Link
-              href="/testimonials"
-              className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition-colors duration-300"
-            >
-              Read More Testimonials
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-              </svg>
-            </Link>
-          </div>
-        </div>
-      </section> */}
-
 
       {/* CTA Section */}
       <section className="py-16 bg-primary dark:bg-primary-dark">
