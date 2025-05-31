@@ -131,7 +131,7 @@ export default function Home() {
       </section>
 
       {/* Testimonial Preview */}
-      <section className="py-20 bg-gradient-to-b from-[#0f172a] to-[#1e293b] text-white">
+{/*       <section className="py-20 bg-gradient-to-b from-[#0f172a] to-[#1e293b] text-white">
         <div className="container mx-auto px-6">
           {/* Heading */}
           <div className="text-center mb-16">
@@ -190,7 +190,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
       {/* CTA Section */}
