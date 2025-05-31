@@ -39,7 +39,7 @@ export default function About() {
     <div>
       <PageHeader 
         title="About My Health Book" 
-        subtitle="Dedicated to advancing healthcare through innovative, high-quality products."
+        subtitle="Dedicated to advancing healthcare through innovative, high-quality high quality food supliment."
       />
 
       {/* Our Story Section */}
