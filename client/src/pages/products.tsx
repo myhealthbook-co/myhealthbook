@@ -23,7 +23,7 @@ export default function Products() {
     <div>
       <PageHeader 
         title="Our Premium Products" 
-        subtitle="Discover our extensive range of high-quality medicines and healthcare products."
+        subtitle="Discover our extensive range of high quality food supliment."
         accentWord="Products"
       />
 
