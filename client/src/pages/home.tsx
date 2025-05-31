@@ -92,7 +92,7 @@ export default function Home() {
               Why Choose My Health Book?
             </h2>
             <p className="text-slate-400 max-w-3xl mx-auto text-lg">
-              We are committed to providing the highest quality healthcare products with exceptional service.
+              We are committed to providing the high quality food supliment with exceptional service.
             </p>
           </div>
 
