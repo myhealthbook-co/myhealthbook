@@ -14,7 +14,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-slate-300 mb-6">
-              Providing premium quality medicines and healthcare products for over 25 years. 
+              Providing premium quality medicines and healthcare products for over 13 years. 
               Trusted by healthcare professionals worldwide.
             </p>
             <div className="flex space-x-4">
@@ -94,7 +94,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+{/*           <div>
             <h3 className="font-heading font-semibold text-lg text-white mb-6">Product Categories</h3>
             <ul className="space-y-3">
               <li>
@@ -128,7 +128,7 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           <div>
             <h3 className="font-heading font-semibold text-lg text-white mb-6">Contact Information</h3>
