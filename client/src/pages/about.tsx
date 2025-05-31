@@ -51,7 +51,7 @@ export default function About() {
                 Our Story
               </h2>
               <p className="text-slate-600 dark:text-slate-300 mb-4">
-                Phyto Science is a leading global health and wellness company focused on transforming lives through innovative nutrition and skincare products.
+                PhytoScience is a leading global health and wellness company focused on transforming lives through high quality food supliment.
               </p>
               <p className="text-slate-600 dark:text-slate-300 mb-4">
                 With a strong commitment to improving physical health and financial well-being, Phyto Science empowers individuals with cutting-edge solutions and business opportunities.
@@ -61,22 +61,22 @@ export default function About() {
               </p>
               <div className="grid grid-cols-3 gap-4 sm:flex sm:items-center mt-8">
                 <div className="flex flex-col items-center sm:mr-8">
-                  <span className="text-primary dark:text-primary-light font-bold text-2xl sm:text-3xl">25+</span>
+                  <span className="text-primary dark:text-primary-light font-bold text-2xl sm:text-3xl">13+</span>
                   <span className="text-slate-500 dark:text-slate-400 text-xs sm:text-sm text-center">Years Experience</span>
                 </div>
                 <div className="flex flex-col items-center mr-8">
-                  <span className="text-primary dark:text-primary-light font-bold text-3xl">45+</span>
+                  <span className="text-primary dark:text-primary-light font-bold text-3xl">54+</span>
                   <span className="text-slate-500 dark:text-slate-400 text-sm">Countries</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <span className="text-primary dark:text-primary-light font-bold text-3xl">100+</span>
+                  <span className="text-primary dark:text-primary-light font-bold text-3xl">7+</span>
                   <span className="text-slate-500 dark:text-slate-400 text-sm">Products</span>
                 </div>
               </div>
             </div>
             <div className="md:w-1/2">
               <img 
-                src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=450&q=80"
+                src="https://res.cloudinary.com/dnqukw6fb/image/upload/v1748699545/082ef7c5-dea6-463e-9fd7-95bac8ad1f56_aasqto.png"
                 alt="MediCarePlus Headquarters" 
                 className="rounded-lg shadow-xl w-full"
               />
@@ -93,7 +93,7 @@ export default function About() {
               Our Values
             </h2>
             <p className="text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
-              At MediCarePlus, we are guided by a set of core values that influence every decision we make.
+              At My Health Book, we are guided by a set of core values that influence every decision we make.
             </p>
           </div>
 
@@ -113,7 +113,7 @@ export default function About() {
               Our Leadership Team
             </h2>
             <p className="text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
-              Meet the experienced professionals guiding MediCarePlus into the future.
+              Meet the experienced professionals guiding My Health Book into the future.
             </p>
           </div>
 
