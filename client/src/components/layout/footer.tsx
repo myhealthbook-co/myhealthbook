@@ -14,7 +14,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-slate-300 mb-6">
-              Providing premium quality medicines and healthcare products for over 13 years. 
+              Providing premium high quality food supliment for over 13 years. 
               Trusted by healthcare professionals worldwide.
             </p>
             <div className="flex space-x-4">
