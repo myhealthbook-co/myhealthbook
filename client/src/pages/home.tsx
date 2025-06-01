@@ -22,10 +22,10 @@ export default function Home() {
           <picture> 
             <source 
               media="(max-width: 768px)" 
-              srcSet="https://res.cloudinary.com/df8blxifj/image/upload/v1747385280/wjb9lawd6fydken7q6ir.jpg"
+              srcSet="https://res.cloudinary.com/dnqukw6fb/image/upload/v1748790047/WhatsApp_Image_2025-06-01_at_20.28.34_280c700f_cpg1md.jpg"
             />
             <img 
-              src="https://res.cloudinary.com/df8blxifj/image/upload/v1747384711/rgsgntteon7wqevu8s0t.jpg"
+              src="https://res.cloudinary.com/dnqukw6fb/image/upload/v1748790073/WhatsApp_Image_2025-06-01_at_20.26.56_66ec8504_yrhvh3.jpg"
               alt="Healthcare background" 
               className="w-full h-full object-cover"
             />
