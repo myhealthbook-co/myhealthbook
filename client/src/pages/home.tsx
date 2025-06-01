@@ -25,7 +25,7 @@ export default function Home() {
               srcSet="https://res.cloudinary.com/dnqukw6fb/image/upload/v1748790047/WhatsApp_Image_2025-06-01_at_20.28.34_280c700f_cpg1md.jpg"
             />
             <img 
-              src="https://res.cloudinary.com/dnqukw6fb/image/upload/v1748790073/WhatsApp_Image_2025-06-01_at_20.26.56_66ec8504_yrhvh3.jpg"
+              src="https://res.cloudinary.com/dnqukw6fb/image/upload/v1748790685/WhatsApp_Image_2025-06-01_at_20.40.31_92999ba3_osyhvw.jpg"
               alt="Healthcare background" 
               className="w-full h-full object-cover"
             />
@@ -34,13 +34,13 @@ export default function Home() {
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl">
-            <h1 className="font-heading font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6" style={{ animationDelay: '1s' }}>
+{/*             <h1 className="font-heading font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6" style={{ animationDelay: '1s' }}>
               <span className="text-green-300">Phyto</span> <span className="text-red-400">Science</span><br />
               <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mt-2 block">Presents</span>
             </h1>
             <p className="text-xl sm:text-2xl text-white/90 mb-8">
               Advanced Healthcare Solutions
-            </p>
+            </p> */}
             <div className="flex button-container">
               <Link href="/products">
                 <Button className="text-lg px-8 py-4 shadow-md hover:shadow-lg bg-primary-light hover:bg-primary text-white transition-transform hover:scale-105 duration-300">
