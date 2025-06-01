@@ -32,7 +32,7 @@ export const team: TeamMember[] = [
     id: 4,
     name: "Mr Bhubaneswar Nayak",
     title: "Member Phytoscience",
-    bio: "Working in this health and wellness company since 8 years and still continue to help the person who is in need of health increment and wealth increment.",
+    bio: "I used the products and got results and  I am the burning testimonial as of now. I am very grateful to the company as I am getting richer by my health and wealth.",
     image: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1748694945/WhatsApp_Image_2025-05-30_at_19.21.39_7cba3790_urej34.jpg",
   },
   {
