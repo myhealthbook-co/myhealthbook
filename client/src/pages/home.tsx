@@ -328,6 +328,45 @@ export default function Home() {
         </div>
       </section>
 
+       <section className="w-full px-4 py-10 bg-[#0b0b0b] text-white min-h-screen">
+      {/* <h2 className="text-3xl sm:text-4xl text-center text-blue-400 font-bold mb-8">
+        Gallery Showcase
+      </h2> */}
+
+      {/* Filter Buttons */}
+      <div className="flex flex-wrap justify-center gap-4 mb-10">
+        {filters.map((filter) => (
+          <button
+            key={filter}
+            onClick={() => setSelected(filter)}
+            className={`px-5 py-2 rounded-full border-2 transition-all duration-300 font-semibold text-sm ${
+              selected === filter
+                ? "bg-blue-500 text-white border-blue-500 shadow-blue-500/50 shadow-md"
+                : "border-blue-400 text-blue-400 hover:bg-blue-600 hover:text-white"
+            }`}
+          >
+            {filter}
+          </button>
+        ))}
+      </div>
+
+      {/* Image Grid */}
+      <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+        {filteredImages.map((img, index) => (
+          <div
+            key={index}
+            className="overflow-hidden rounded-lg border border-[#222] hover:scale-105 transition-transform duration-300 shadow hover:shadow-blue-500/20"
+          >
+            <img
+              src={img.src}
+              alt={img.alt}
+              className="w-full h-full object-fill"
+            />
+          </div>
+        ))}
+      </div>
+    </section>
+
       {/* Announcements Section */}
       <section className="py-16 bg-slate-50 dark:bg-slate-900">
         <div className="container mx-auto px-4">
@@ -405,45 +444,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <section className="w-full px-4 py-10 bg-[#0b0b0b] text-white min-h-screen">
-      {/* <h2 className="text-3xl sm:text-4xl text-center text-blue-400 font-bold mb-8">
-        Gallery Showcase
-      </h2> */}
-
-      {/* Filter Buttons */}
-      <div className="flex flex-wrap justify-center gap-4 mb-10">
-        {filters.map((filter) => (
-          <button
-            key={filter}
-            onClick={() => setSelected(filter)}
-            className={`px-5 py-2 rounded-full border-2 transition-all duration-300 font-semibold text-sm ${
-              selected === filter
-                ? "bg-blue-500 text-white border-blue-500 shadow-blue-500/50 shadow-md"
-                : "border-blue-400 text-blue-400 hover:bg-blue-600 hover:text-white"
-            }`}
-          >
-            {filter}
-          </button>
-        ))}
-      </div>
-
-      {/* Image Grid */}
-      <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
-        {filteredImages.map((img, index) => (
-          <div
-            key={index}
-            className="overflow-hidden rounded-lg border border-[#222] hover:scale-105 transition-transform duration-300 shadow hover:shadow-blue-500/20"
-          >
-            <img
-              src={img.src}
-              alt={img.alt}
-              className="w-full h-full object-fill"
-            />
-          </div>
-        ))}
-      </div>
-    </section>
 
       {/* CTA Section */}
       <section className="py-16 bg-primary dark:bg-primary-dark">
