@@ -7,10 +7,286 @@ import FeatureCard from "@/components/ui/feature-card";
 import { features } from "@/data/features";
 import { testimonials } from "@/data/testimonials";
 import ContactPopup from "@/components/ui/contact-popup";
+import React, { useState } from 'react';
+
+const filters = ["World leaders talk on stemcell", "Company Founders", "Scientist behind it","Our teams", "Members", "Well wishers", "All"];
+const images = [
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749134798/WhatsApp_Image_2025-06-05_at_15.02.39_2e09b0ca_pp2kmh.jpg",
+    alt: "Gallery Image",
+    category: "World leaders talk on stemcell",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749209437/WhatsApp_Image_2025-06-06_at_16.59.43_21e16510_wnnzti.jpg",
+    alt: "Gallery Image",
+    category: "World leaders talk on stemcell",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749134747/WhatsApp_Image_2025-06-05_at_15.02.38_8a02bf30_h1v6ny.jpg",
+    alt: "Gallery Image",
+    category: "World leaders talk on stemcell",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749209622/WhatsApp_Image_2025-06-06_at_17.02.14_571087a9_luoomh.jpg",
+    alt: "Gallery Image",
+    category: "World leaders talk on stemcell",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749134817/WhatsApp_Image_2025-06-05_at_15.03.36_d4793fdc_j86r59.jpg",
+    alt: "Gallery Image",
+    category: "Company Founders",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749134826/WhatsApp_Image_2025-06-05_at_15.03.40_4c9d45c3_qrhg8y.jpg",
+    alt: "Gallery Image",
+    category: "Company Founders",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749134858/WhatsApp_Image_2025-06-05_at_15.03.40_6e392c76_wywvbn.jpg",
+    alt: "Gallery Image",
+    category: "Company Founders",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749134880/WhatsApp_Image_2025-06-05_at_15.03.41_27aca256_zslzqk.jpg",
+    alt: "Gallery Image",
+    category: "Company Founders",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749134886/WhatsApp_Image_2025-06-05_at_15.03.41_5b199c3b_jekhzw.jpg",
+    alt: "Gallery Image",
+    category: "Company Founders",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135305/WhatsApp_Image_2025-06-05_at_15.05.03_a7ad8d03_rdjptx.jpg",
+    alt: "Gallery Image",
+    category: "Scientist behind it",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135316/WhatsApp_Image_2025-06-05_at_15.05.03_025f0438_bmhole.jpg",
+    alt: "Gallery Image",
+    category: "Scientist behind it",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749210197/WhatsApp_Image_2025-06-06_at_17.12.24_839f0133_krlme2.jpg",
+    alt: "Gallery Image",
+    category: "Scientist behind it",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749210190/WhatsApp_Image_2025-06-06_at_17.12.24_5e1397e7_ynbiyv.jpg",
+    alt: "Gallery Image",
+    category: "Scientist behind it",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135348/WhatsApp_Image_2025-06-05_at_15.05.49_f1e2f3b2_wva7kp.jpg",
+    alt: "Gallery Image",
+    category: "Our teams",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135359/WhatsApp_Image_2025-06-05_at_15.05.49_cc3ad970_xk3bai.jpg",
+    alt: "Gallery Image",
+    category: "Our teams",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135376/WhatsApp_Image_2025-06-05_at_15.05.49_cde7bdaf_kqgh9o.jpg",
+    alt: "Gallery Image",
+    category: "Our teams",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135427/WhatsApp_Image_2025-06-05_at_15.05.50_40a745e4_csae0j.jpg",
+    alt: "Gallery Image",
+    category: "Our teams",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135432/WhatsApp_Image_2025-06-05_at_15.06.41_40dbc06f_ihatfu.jpg",
+    alt: "Gallery Image",
+    category: "Members",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135459/WhatsApp_Image_2025-06-05_at_15.06.42_6075d591_vvwgni.jpg",
+    alt: "Gallery Image",
+    category: "Members",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135462/WhatsApp_Image_2025-06-05_at_15.06.42_f4801a63_bne5es.jpg",
+    alt: "Gallery Image",
+    category: "Members",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135465/WhatsApp_Image_2025-06-05_at_15.06.43_d5663d58_ihvobp.jpg",
+    alt: "Gallery Image",
+    category: "Members",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135513/WhatsApp_Image_2025-06-05_at_15.06.43_8e848c56_vnirri.jpg",
+    alt: "Gallery Image",
+    category: "Members",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135518/WhatsApp_Image_2025-06-05_at_15.06.46_242a33df_q4umeu.jpg",
+    alt: "Gallery Image",
+    category: "Members",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135533/WhatsApp_Image_2025-06-05_at_15.06.46_922fd77d_mdtl1w.jpg",
+    alt: "Gallery Image",
+    category: "Members",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135545/WhatsApp_Image_2025-06-05_at_15.06.47_8fce3cec_btouu1.jpg",
+    alt: "Gallery Image",
+    category: "Members",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135564/WhatsApp_Image_2025-06-05_at_15.06.48_9bdf7ead_buyrgy.jpg",
+    alt: "Gallery Image",
+    category: "Members",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135574/WhatsApp_Image_2025-06-05_at_15.06.48_11d419df_iwhvba.jpg",
+    alt: "Gallery Image",
+    category: "Members",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135586/WhatsApp_Image_2025-06-05_at_15.06.50_c4221bb2_stzhj2.jpg",
+    alt: "Gallery Image",
+    category: "Members",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135596/WhatsApp_Image_2025-06-05_at_15.06.49_15fca2d6_xv34aw.jpg",
+    alt: "Gallery Image",
+    category: "Members",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135622/WhatsApp_Image_2025-06-05_at_15.06.51_fa6c5c1f_tnywm5.jpg",
+    alt: "Gallery Image",
+    category: "Members",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135636/WhatsApp_Image_2025-06-05_at_15.06.50_215c725c_osni3k.jpg",
+    alt: "Gallery Image",
+    category: "Members",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135648/WhatsApp_Image_2025-06-05_at_15.06.52_467e1e16_hotv71.jpg",
+    alt: "Gallery Image",
+    category: "Members",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135652/WhatsApp_Image_2025-06-05_at_15.06.50_ba74a085_qz3mn2.jpg",
+    alt: "Gallery Image",
+    category: "Members",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135654/WhatsApp_Image_2025-06-05_at_15.06.52_8e17f2a0_rolz8l.jpg",
+    alt: "Gallery Image",
+    category: "Members",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135709/WhatsApp_Image_2025-06-05_at_15.06.53_b5522f6f_iwfsne.jpg",
+    alt: "Gallery Image",
+    category: "Members",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135773/WhatsApp_Image_2025-06-05_at_15.06.53_d840832f_vrbsww.jpg",
+    alt: "Gallery Image",
+    category: "Members",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135797/WhatsApp_Image_2025-06-05_at_15.06.54_9591cab6_wskviq.jpg",
+    alt: "Gallery Image",
+    category: "Members",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135848/WhatsApp_Image_2025-06-05_at_15.06.54_f710aac4_uoqiou.jpg",
+    alt: "Gallery Image",
+    category: "Members",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135865/WhatsApp_Image_2025-06-05_at_15.06.55_121e24d3_ge062x.jpg",
+    alt: "Gallery Image",
+    category: "Members",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135892/WhatsApp_Image_2025-06-05_at_15.07.29_ec791c5f_tryzvt.jpg",
+    alt: "Gallery Image",
+    category: "Members",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135899/WhatsApp_Image_2025-06-05_at_15.07.27_4b9464fb_xapvun.jpg",
+    alt: "Gallery Image",
+    category: "Well wishers",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135922/WhatsApp_Image_2025-06-05_at_15.07.29_02a2a64f_kxgfc0.jpg",
+    alt: "Gallery Image",
+    category: "Well wishers",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135946/WhatsApp_Image_2025-06-05_at_15.07.29_fe2fa7a1_wptwwf.jpg",
+    alt: "Gallery Image",
+    category: "Well wishers",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135961/WhatsApp_Image_2025-06-05_at_15.07.31_15cecc45_nwqrj9.jpg",
+    alt: "Gallery Image",
+    category: "Well wishers",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135973/WhatsApp_Image_2025-06-05_at_15.07.30_dfc2a1c3_lobrkx.jpg",
+    alt: "Gallery Image",
+    category: "Well wishers",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749136053/WhatsApp_Image_2025-06-05_at_15.07.31_c451b814_sh7ocr.jpg",
+    alt: "Gallery Image",
+    category: "Well wishers",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749136066/WhatsApp_Image_2025-06-05_at_18.25.17_90ad716d_ricmsy.jpg",
+    alt: "Gallery Image",
+    category: "Well wishers",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749211537/WhatsApp_Image_2025-06-06_at_02.18.52_f3208485_lrk9vg.jpg",
+    alt: "Gallery Image",
+    category: "Well wishers",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749136789/WhatsApp_Image_2025-06-05_at_15.07.31_1305a1a7_vedgam.jpg",
+    alt: "Gallery Image",
+    category: "Well wishers",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749212479/WhatsApp_Image_2025-06-05_at_15.07.32_ba0c99a7_uucrus.jpg",
+    alt: "Gallery Image",
+    category: "Well wishers",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749212471/WhatsApp_Image_2025-06-05_at_15.07.32_da381394_nu6mwu.jpg",
+    alt: "Gallery Image",
+    category: "Well wishers",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749212380/WhatsApp_Image_2025-06-05_at_15.07.27_d5124eed_oatruu.jpg",
+    alt: "Gallery Image",
+    category: "Well wishers",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749212368/WhatsApp_Image_2025-06-05_at_15.07.26_7aef7747_ht2ihx.jpg",
+    alt: "Gallery Image",
+    category: "Well wishers",
+  },
+];
 
 export default function Home() {
   const featuredProducts = products.slice(0, 3);
   const featuredTestimonials = testimonials.slice(0, 3);
+  const [selected, setSelected] = useState("World leaders talk on stemcell");
+
+  const filteredImages =
+    selected === "All"
+      ? images
+      : images.filter((img) => img.category === selected);
 
 
   return (
@@ -130,6 +406,44 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="w-full px-4 py-10 bg-[#0b0b0b] text-white min-h-screen">
+      {/* <h2 className="text-3xl sm:text-4xl text-center text-blue-400 font-bold mb-8">
+        Gallery Showcase
+      </h2> */}
+
+      {/* Filter Buttons */}
+      <div className="flex flex-wrap justify-center gap-4 mb-10">
+        {filters.map((filter) => (
+          <button
+            key={filter}
+            onClick={() => setSelected(filter)}
+            className={`px-5 py-2 rounded-full border-2 transition-all duration-300 font-semibold text-sm ${
+              selected === filter
+                ? "bg-blue-500 text-white border-blue-500 shadow-blue-500/50 shadow-md"
+                : "border-blue-400 text-blue-400 hover:bg-blue-600 hover:text-white"
+            }`}
+          >
+            {filter}
+          </button>
+        ))}
+      </div>
+
+      {/* Image Grid */}
+      <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+        {filteredImages.map((img, index) => (
+          <div
+            key={index}
+            className="overflow-hidden rounded-lg border border-[#222] hover:scale-105 transition-transform duration-300 shadow hover:shadow-blue-500/20"
+          >
+            <img
+              src={img.src}
+              alt={img.alt}
+              className="w-full h-full object-fill"
+            />
+          </div>
+        ))}
+      </div>
+    </section>
 
       {/* CTA Section */}
       <section className="py-16 bg-primary dark:bg-primary-dark">
