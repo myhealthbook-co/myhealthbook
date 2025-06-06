@@ -22,7 +22,7 @@ export default function Home() {
           <picture> 
             <source 
               media="(max-width: 768px)" 
-              srcSet="https://res.cloudinary.com/dnqukw6fb/image/upload/v1748790047/WhatsApp_Image_2025-06-01_at_20.28.34_280c700f_cpg1md.jpg"
+              srcSet="https://res.cloudinary.com/dnqukw6fb/image/upload/v1749212830/WhatsApp_Image_2025-06-06_at_17.56.11_9f100045_jkipyz.jpg"
             />
             <img 
               src="https://res.cloudinary.com/dnqukw6fb/image/upload/v1748790685/WhatsApp_Image_2025-06-01_at_20.40.31_92999ba3_osyhvw.jpg"
