@@ -42,10 +42,10 @@ export default function Testimonials() {
               </div>
               <div className="p-6">
                 <h3 className="font-heading font-semibold text-lg text-slate-800 dark:text-white mb-2">
-                  Member
+                  Founder
                 </h3>
                 <p className="text-slate-600 dark:text-slate-300">
-                  All about our products and their benefits to health.
+                  About mouth cancer
                 </p>
               </div>
             </div>
@@ -58,7 +58,7 @@ export default function Testimonials() {
                   Member
                 </h3>
                 <p className="text-slate-600 dark:text-slate-300">
-                  All about our products and their benefits to health.
+                  Bhubaneswar Nayak about his own
                 </p>
               </div>
             </div>
@@ -71,7 +71,7 @@ export default function Testimonials() {
                   Member
                 </h3>
                 <p className="text-slate-600 dark:text-slate-300">
-                  All about our products and their benefits to health.
+                  About liver sporiasis patient
                 </p>
               </div>
             </div>
