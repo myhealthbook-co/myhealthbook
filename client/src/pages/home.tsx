@@ -9,7 +9,7 @@ import { testimonials } from "@/data/testimonials";
 import ContactPopup from "@/components/ui/contact-popup";
 import React, { useState } from 'react';
 
-const filters = ["World leaders talk on stemcell", "Company Founders", "Scientist behind it","Our teams", "Members", "Well wishers", "All"];
+const filters = ["World leaders talk on stemcell", "Company Founders", "Scientist behind it","Our team", "Members", "Well wishers", "All"];
 const images = [
   {
     src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749134798/WhatsApp_Image_2025-06-05_at_15.02.39_2e09b0ca_pp2kmh.jpg",
@@ -32,11 +32,6 @@ const images = [
     category: "World leaders talk on stemcell",
   },
   {
-    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749134817/WhatsApp_Image_2025-06-05_at_15.03.36_d4793fdc_j86r59.jpg",
-    alt: "Gallery Image",
-    category: "Company Founders",
-  },
-  {
     src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749134826/WhatsApp_Image_2025-06-05_at_15.03.40_4c9d45c3_qrhg8y.jpg",
     alt: "Gallery Image",
     category: "Company Founders",
@@ -47,12 +42,17 @@ const images = [
     category: "Company Founders",
   },
   {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749134886/WhatsApp_Image_2025-06-05_at_15.03.41_5b199c3b_jekhzw.jpg",
+    alt: "Gallery Image",
+    category: "Company Founders",
+  },
+  {
     src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749134880/WhatsApp_Image_2025-06-05_at_15.03.41_27aca256_zslzqk.jpg",
     alt: "Gallery Image",
     category: "Company Founders",
   },
   {
-    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749134886/WhatsApp_Image_2025-06-05_at_15.03.41_5b199c3b_jekhzw.jpg",
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749134817/WhatsApp_Image_2025-06-05_at_15.03.36_d4793fdc_j86r59.jpg",
     alt: "Gallery Image",
     category: "Company Founders",
   },
@@ -79,22 +79,22 @@ const images = [
   {
     src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135348/WhatsApp_Image_2025-06-05_at_15.05.49_f1e2f3b2_wva7kp.jpg",
     alt: "Gallery Image",
-    category: "Our teams",
-  },
-  {
-    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135359/WhatsApp_Image_2025-06-05_at_15.05.49_cc3ad970_xk3bai.jpg",
-    alt: "Gallery Image",
-    category: "Our teams",
+    category: "Our team",
   },
   {
     src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135376/WhatsApp_Image_2025-06-05_at_15.05.49_cde7bdaf_kqgh9o.jpg",
     alt: "Gallery Image",
-    category: "Our teams",
+    category: "Our team",
+  },
+  {
+    src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135359/WhatsApp_Image_2025-06-05_at_15.05.49_cc3ad970_xk3bai.jpg",
+    alt: "Gallery Image",
+    category: "Our team",
   },
   {
     src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135427/WhatsApp_Image_2025-06-05_at_15.05.50_40a745e4_csae0j.jpg",
     alt: "Gallery Image",
-    category: "Our teams",
+    category: "Our team",
   },
   {
     src: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749135432/WhatsApp_Image_2025-06-05_at_15.06.41_40dbc06f_ihatfu.jpg",
