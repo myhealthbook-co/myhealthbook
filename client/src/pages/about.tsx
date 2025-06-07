@@ -5,6 +5,40 @@ import FeatureCard from "@/components/ui/feature-card";
 import { values } from "@/data/features";
 import { team } from "@/data/team";
 import { Button } from "@/components/ui/button";
+import React, { useState } from "react";
+
+const images = [
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267439/WhatsApp_Image_2025-06-07_at_00.59.19_8e689510_dljnxw.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267452/WhatsApp_Image_2025-06-07_at_00.58.54_9fc6bf08_yfogrm.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267700/WhatsApp_Image_2025-06-07_at_00.58.09_da48b944_jbnulv.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267501/WhatsApp_Image_2025-06-07_at_00.58.24_d8a3be3c_xzbkra.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267644/WhatsApp_Image_2025-06-07_at_00.58.25_d9366590_m95gw1.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267650/WhatsApp_Image_2025-06-07_at_00.58.21_2ae90c6b_dh69xc.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267704/WhatsApp_Image_2025-06-07_at_00.58.07_d0985e79_ilpmoy.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267697/WhatsApp_Image_2025-06-07_at_00.58.10_99164389_d6kli6.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267695/WhatsApp_Image_2025-06-07_at_00.58.12_470c9a3d_gswqqg.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267701/WhatsApp_Image_2025-06-07_at_00.58.04_01931bc1_bbkrvf.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267701/WhatsApp_Image_2025-06-07_at_00.58.09_e6a3b54c_gceglc.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267699/WhatsApp_Image_2025-06-07_at_00.58.09_a3f3cc9e_ockkfb.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267696/WhatsApp_Image_2025-06-07_at_00.58.10_811a9d4e_qlujwj.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267695/WhatsApp_Image_2025-06-07_at_00.58.16_445104b3_licfji.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267694/WhatsApp_Image_2025-06-07_at_00.58.11_a5956338_xmt3xn.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267683/WhatsApp_Image_2025-06-07_at_00.58.14_7a254973_zbxujv.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267682/WhatsApp_Image_2025-06-07_at_00.58.20_330d23db_kmnve3.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267680/WhatsApp_Image_2025-06-07_at_00.58.14_338ddb35_qmwju6.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267679/WhatsApp_Image_2025-06-07_at_00.58.20_df454620_d2q87t.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267674/WhatsApp_Image_2025-06-07_at_00.58.22_20656337_ikex98.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267670/WhatsApp_Image_2025-06-07_at_00.58.16_50bae83b_afndhw.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267667/WhatsApp_Image_2025-06-07_at_00.58.21_2ff15bd6_y2gc5a.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267661/WhatsApp_Image_2025-06-07_at_00.58.22_31bbed28_ef21np.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267650/WhatsApp_Image_2025-06-07_at_00.58.24_7f96f95e_xpqzn1.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267650/WhatsApp_Image_2025-06-07_at_00.58.26_862314ea_fkv2tu.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267649/WhatsApp_Image_2025-06-07_at_00.58.26_419784cd_utj1yo.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267648/WhatsApp_Image_2025-06-07_at_00.58.22_c3a06ed7_cydyvf.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267643/WhatsApp_Image_2025-06-07_at_00.58.24_a036514f_vcw585.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267694/WhatsApp_Image_2025-06-07_at_00.58.13_5b88d13c_ifazym.jpg",
+  "https://res.cloudinary.com/dnqukw6fb/image/upload/v1749267691/WhatsApp_Image_2025-06-07_at_00.58.11_52d54931_qyte3m.jpg",
+];
 
 export default function About() {
   const [formData, setFormData] = useState({
@@ -35,6 +69,8 @@ export default function About() {
 
     window.open(whatsappURL, "_blank");
   };
+  const [showAll, setShowAll] = useState(false);
+  const visibleImages = showAll ? images : images.slice(0, 10);
   return (
     <div>
       <PageHeader 
@@ -142,6 +178,34 @@ export default function About() {
         </div>
       </section>
 
+      <section className="bg-black text-white py-10 px-4">
+      <h2 className="text-3xl font-bold text-center text-white mb-10">
+        My Health Book Photo Gallery
+      </h2>
+
+      <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+        {visibleImages.map((src, index) => (
+          <img
+            key={index}
+            src={src}
+            alt={`Gallery Image ${index + 1}`}
+            className="w-full rounded-lg shadow-lg hover:scale-105 hover:brightness-110 transition-transform duration-300 border-2 border-blue-400"
+          />
+        ))}
+      </div>
+
+      {!showAll && (
+        <div className="flex justify-center mt-8">
+          <button
+            onClick={() => setShowAll(true)}
+            className="px-6 py-2 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors"
+          >
+            Show More
+          </button>
+        </div>
+      )}
+    </section>
+      
       {/* Contact Section */}
       <section id="contact" className="py-16 bg-slate-50 dark:bg-slate-900">
         <div className="container mx-auto px-4">
