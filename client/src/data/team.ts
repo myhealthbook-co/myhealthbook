@@ -39,7 +39,7 @@ export const team: TeamMember[] = [
     id: 5,
     name: "Mr Bibhuti Bhusan Senapati",
     title: "Member My Health Book",
-    bio: "I am pleased to see te results what PhytoScience delivers. I am very grateful to My Health Book.",
+    bio: "I am pleased to see the results what PhytoScience delivers. I am very grateful to My Health Book.",
     image: "https://res.cloudinary.com/dnqukw6fb/image/upload/v1748694969/WhatsApp_Image_2025-05-30_at_19.22.59_b58fdc2d_ogcurm.jpg",
   },
   {
