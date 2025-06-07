@@ -38,6 +38,45 @@ export default function Testimonials() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden">
               <div className="aspect-w-16 aspect-h-9 bg-slate-200 dark:bg-slate-700">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/nLiIVql96lc?si=QYSdY44cGUAfCdC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div className="p-6">
+                <h3 className="font-heading font-semibold text-lg text-slate-800 dark:text-white mb-2">
+                  Member
+                </h3>
+                <p className="text-slate-600 dark:text-slate-300">
+                  All about our products and their benefits to health.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden">
+              <div className="aspect-w-16 aspect-h-9 bg-slate-200 dark:bg-slate-700">
+                <iframe width="560" height="315" src="https://youtube.com/embed/AtP-nT3Obs8?si=A29eoQAq7jxltK1-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div className="p-6">
+                <h3 className="font-heading font-semibold text-lg text-slate-800 dark:text-white mb-2">
+                  Member
+                </h3>
+                <p className="text-slate-600 dark:text-slate-300">
+                  All about our products and their benefits to health.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden">
+              <div className="aspect-w-16 aspect-h-9 bg-slate-200 dark:bg-slate-700">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CvSEgIFfwpQ?si=F8mmZINnb4YuJFsx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <div className="p-6">
+                <h3 className="font-heading font-semibold text-lg text-slate-800 dark:text-white mb-2">
+                  Member
+                </h3>
+                <p className="text-slate-600 dark:text-slate-300">
+                  All about our products and their benefits to health.
+                </p>
+              </div>
+            </div>
+            <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg overflow-hidden">
+              <div className="aspect-w-16 aspect-h-9 bg-slate-200 dark:bg-slate-700">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/7Dgn4lSDUt0?si=toQdB2-z6d6joKjV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
               <div className="p-6">
