@@ -14,7 +14,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-slate-300 mb-6">
-              Providing premium high quality food supliment for over 13 years. 
+              Providing premium high quality food Supliments for over 13 years. 
               Trusted by healthcare professionals worldwide.
             </p>
             <div className="flex space-x-4">
@@ -147,6 +147,10 @@ export default function Footer() {
               <li className="flex items-start">
                 <i className="ri-phone-line text-primary-light mt-1 mr-3"></i>
                 <a href="tel:+919776932777" className="text-slate-300 hover:text-primary-light transition-colors">+91 9776932777</a>
+              </li>
+              <li className="flex items-start">
+                <i className="ri-phone-line text-primary-light mt-1 mr-3"></i>
+                <a href="tel:+919437123500" className="text-slate-300 hover:text-primary-light transition-colors">+91 9437123500</a>
               </li>
               <li className="flex items-start">
                 <i className="ri-mail-line text-primary-light mt-1 mr-3"></i>
