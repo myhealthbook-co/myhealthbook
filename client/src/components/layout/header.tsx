@@ -21,7 +21,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <img 
-              src="https://res.cloudinary.com/dnqukw6fb/image/upload/v1751173290/WhatsApp_Image_2025-06-29_at_10.29.37_84bd5c21_is0kzn.jpg" 
+              src="https://res.cloudinary.com/dnqukw6fb/image/upload/v1751174992/ChatGPT_Image_Jun_29_2025_10_58_49_AM_hwmdtl.png" 
               alt="MyHealth Book Logo" 
               className="h-16 w-auto"
             />
