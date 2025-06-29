@@ -8,7 +8,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center space-x-2 mb-6">
               <img 
-                src="https://res.cloudinary.com/dnqukw6fb/image/upload/v1751174992/ChatGPT_Image_Jun_29_2025_10_58_49_AM_hwmdtl.png" 
+                src="https://res.cloudinary.com/dnqukw6fb/image/upload/v1751175545/ChatGPT_Image_Jun_29_2025_10_58_48_AM_hybqlu.png" 
                 alt="MyHealth Book Logo" 
                 className="h-20 w-auto"
               />
