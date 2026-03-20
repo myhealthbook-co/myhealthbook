@@ -98,7 +98,7 @@ export default function Offers() {
             className="inline-block"
           >
             <img
-              src="https://res.cloudinary.com/dnqukw6fb/image/upload/v1747418291/WhatsApp_Image_2025-05-16_at_21.03.51_5b954924_kw92cw.jpg" 
+              src="https://res.cloudinary.com/dnqukw6fb/image/upload/v1773983289/WhatsApp_Image_2026-03-19_at_2.12.00_AM_ghvcib.jpg" 
               alt="Flyer Offer"
               width={600}
               height={400}
@@ -108,9 +108,9 @@ export default function Offers() {
 
           {/* Offer Info */}
           <div className="mt-4 space-y-2 text-slate-700 dark:text-slate-200">
-            <p className="text-sm">📅 <strong>Booking Start From:</strong> 20th May 2025</p>
-            <p className="text-sm">✈️ <strong>Fly On:</strong> August / September</p>
-            <p className="text-lg font-bold text-yellow-400">💰 Offer Price: Rs. 59,999/-</p>
+            <p className="text-sm">📅 <strong>Booking Last Date:</strong> 31/ 03/ 2026</p>
+            <p className="text-sm">✈️ <strong>Fly On:</strong> June / July</p>
+            <p className="text-lg font-bold text-yellow-400">💰 Offer Price: Rs. 91,000/-</p>
             <p className="text-sm">
               📍<strong>Office:</strong> At Gatebazar (Lochapoda road, near Dhuba street), Berhampur, Odisha
             </p>
