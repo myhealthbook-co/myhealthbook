@@ -112,7 +112,7 @@ export default function Offers() {
             <p className="text-sm">✈️ <strong>Fly On:</strong> June / July</p>
             <p className="text-lg font-bold text-yellow-400">💰 Offer Price: Rs. 91,000/-</p>
             <p className="text-sm">
-              📍<strong>Office:</strong> At Gatebazar (Lochapoda road, near Dhuba street), Berhampur, Odisha
+              📍<strong>Office:</strong> Aska Road, Near Ashraf Petrol Pump, Berhampur, Odisha
             </p>
             <p className="text-sm">📞 <strong>Contacts:</strong> +91 9776932777</p>
           </div>
@@ -127,6 +127,19 @@ export default function Offers() {
             Book Now via WhatsApp
           </a>
         </div>
+        <a 
+            href="https://res.cloudinary.com/dnqukw6fb/image/upload/v1773985537/WhatsApp_Image_2026-03-19_at_9.48.10_AM_1_g7akzk.jpg" 
+            download="Malaysia-Travel-Offer.jpg"
+            className="inline-block"
+          >
+            <img
+              src="https://res.cloudinary.com/dnqukw6fb/image/upload/v1773985537/WhatsApp_Image_2026-03-19_at_9.48.10_AM_1_g7akzk.jpg" 
+              alt="Flyer Offer"
+              width={600}
+              height={400}
+              className="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+            />
+          </a>
       </section>
     </div>
   );
