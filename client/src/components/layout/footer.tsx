@@ -150,7 +150,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start">
                 <i className="ri-phone-line text-primary-light mt-1 mr-3"></i>
-                <a href="tel:+919437123500" className="text-slate-300 hover:text-primary-light transition-colors">+91 9437123500</a>
+                <a href="tel:+919437617561" className="text-slate-300 hover:text-primary-light transition-colors">+91 9437617561</a>
               </li>
               <li className="flex items-start">
                 <i className="ri-mail-line text-primary-light mt-1 mr-3"></i>
