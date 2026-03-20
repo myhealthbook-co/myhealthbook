@@ -136,12 +136,12 @@ export default function Footer() {
               <li className="flex items-start">
                 <i className="ri-map-pin-line text-primary-light mt-1 mr-3"></i>
                 <a 
-                  href="https://maps.app.goo.gl/rpjCWzQWcWuGe6GBA" 
+                  href="#" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-slate-300 hover:text-primary-light transition-colors"
                 >
-                  At Gatebazar (Lochapoda road, near Dhuba street), Berhampur, Odisha
+                  Aska Road, Near Ashraf Petrol Pump, Berhampur, Odisha, 760006
                 </a>
               </li>
               <li className="flex items-start">
