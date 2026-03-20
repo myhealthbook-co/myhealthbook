@@ -10,9 +10,22 @@ export interface Announcement {
 export const announcements: Announcement[] = [
   {
     id: 1,
-    title: "Revised Business Hours",
-    content: "Please be informed that from 23rd March 2025, our company's working days and hours (except Public Holiday) will be as follows:\n\nWorking Days: Monday(10am to 2pm & 5pm to 9pm) to Sunday(2nd half holiday)\n\nWe are confident that this revised working days and hours will be able to meet your needs and provide you the necessary service.",
-    date: "2025-03-23",
+    title: "Grand Opening - MyHealthBook",
+    content: `We are Happy to invite you to the GRAND OPENING of MyHealthBook.
+
+📍 Location: Aska Road, Near Ashraf Petrol Pump
+
+📅 Date: 1st April 2026 (Wednesday)
+⏰ Time: 11:00 AM – 5:30 PM
+
+🎉 Come & join us in celebrating the opening.
+⭐ Featuring special presence of all our well-wishers.
+
+We are going to introduce world-class products that will enhance your health, wealth, and happiness.
+
+📞 Contact: 9776932777, 9437617561
+🌐 Website: www.myhealthbook.org`,
+    date: "2026-04-01",
     isImportant: true
   }
 ];
