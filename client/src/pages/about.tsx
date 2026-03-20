@@ -229,7 +229,7 @@ export default function About() {
                       </h3>
                       <p className="text-slate-600 dark:text-slate-300">
                         <span className="text-slate-300">
-                          At Gatebazar (Lochapoda road, near Dhuba street), Berhampur, Odisha<br />
+                          Aska Road, Near Ashraf Petrol Pump, Berhampur, Odisha, 760006<br />
                         </span>
                       </p>
                     </div>
