@@ -49,7 +49,7 @@ export default function ContactPopup() {
                 <div>
                   <h3 className="font-medium text-slate-900 dark:text-white mb-1 group-hover:text-primary-light transition-colors">Location</h3>
                   <p className="text-slate-600 dark:text-slate-300">
-                    At Gatebazar (Lochapoda road, near Dhuba street), Berhampur, Odisha
+                    Aska Road, Near Ashraf Petrol Pump, Berhampur, Odisha, 760006
                   </p>
                 </div>
               </a>
