@@ -93,7 +93,7 @@ export default function Offers() {
 
           {/* Flyer Image - Click to Download */}
           <a 
-            href="https://res.cloudinary.com/dnqukw6fb/image/upload/v1747418291/WhatsApp_Image_2025-05-16_at_21.03.51_5b954924_kw92cw.jpg" 
+            href="https://res.cloudinary.com/dnqukw6fb/image/upload/v1773983289/WhatsApp_Image_2026-03-19_at_2.12.00_AM_ghvcib.jpg" 
             download="Malaysia-Travel-Offer.jpg"
             className="inline-block"
           >
