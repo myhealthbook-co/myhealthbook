@@ -126,7 +126,7 @@ export default function Offers() {
           >
             Book Now via WhatsApp
           </a>
-        </div>
+        
         <a 
             href="https://res.cloudinary.com/dnqukw6fb/image/upload/v1773985537/WhatsApp_Image_2026-03-19_at_9.48.10_AM_1_g7akzk.jpg" 
             download="Malaysia-Travel-Offer.jpg"
@@ -140,6 +140,7 @@ export default function Offers() {
               className="rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
             />
           </a>
+          </div>
       </section>
     </div>
   );
